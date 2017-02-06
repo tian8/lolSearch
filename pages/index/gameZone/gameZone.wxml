@@ -1,0 +1,28 @@
+<!--pages/index/gameZone/gameZone.wxml-->
+<import src="../fight/fight.wxml" />
+<view class="gamezone">
+    <view class="win-header-container">
+        <view class="circle"></view>
+        <text>胜利方</text>
+        <text>金钱</text>
+        <text>杀/死/助</text>
+        <text>出装</text>
+    </view>
+    <view class="team-container">
+    <view class="win-line"></view>
+        <view class="team">
+        <block wx:for="{{team_win.player_champions}}" wx:for-item="item">
+            <template is="fight" data="{{...item}}"></template>
+        </block>
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="team-container">
+    <view class="lose-line"></view>
+        <view class="team">
+        <block wx:for="{{team_lose.player_champions}}" wx:for-item="item">
+            <template is="fight" data="{{...item}}"></template>
+        </block>
+        </view>
+    </view>
+</view>

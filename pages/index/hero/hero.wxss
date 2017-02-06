@@ -1,0 +1,53 @@
+/* pages/index/hero/hero.wxss */
+@import "../form/recent.wxss";
+
+text{
+    font-size: 24rpx;
+}
+.base-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:120rpx;
+    width:750rpx;
+    border-bottom:1px solid #EEEEE0;
+}
+.avatar{
+    width:100rpx;
+    height:100rpx;
+    border-radius: 50rpx;
+}
+.base-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:20rpx; 
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.box1 text{
+    font-size: 36rpx;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    width:400rpx;
+    justify-content: flex-start;
+}
+.combat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.combat image{
+    width:76rpx;
+    height:76rpx;
+}
+.recents-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

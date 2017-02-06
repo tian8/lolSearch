@@ -1,0 +1,25 @@
+.recent-container{
+    display: flex;
+    flex-direction: row;
+    height:100rpx;
+    width:600rpx;
+    margin: 50rpx;
+    border-bottom: 1px solid #F0F0F0;
+}
+.recent-container image{
+    width: 80rpx;
+    height:80rpx;
+    border-radius:40rpx; 
+}
+.recent-container text{
+    font-size:36rpx;
+}
+.message-box{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30rpx;
+}
+.time-box{
+    display: flex;
+    flex-direction: row;
+}

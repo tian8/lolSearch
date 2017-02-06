@@ -1,0 +1,5 @@
+<template name="clothes">
+    <view class="clothes-container">
+        <image src="http://static.lolbox.duowan.com/images/items/{{id+'_40x40.jpg'}}" ></image>
+    </view>
+</template>

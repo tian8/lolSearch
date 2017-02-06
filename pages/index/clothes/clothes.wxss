@@ -1,0 +1,5 @@
+.clothes-container image{
+    width:30rpx;
+    height:35rpx;
+    margin-left: 5rpx;
+}

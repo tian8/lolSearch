@@ -1,0 +1,15 @@
+<template name="recent">
+<view class="recent-container">
+    <view>
+    <image src="http://static.lolbox.duowan.com/images/champions/{{champion.name+'_40x40.jpg'}}"></image>
+    </view>
+    <view class="message-box">
+    <text >{{battle_result? "胜利":"失败"}}</text>
+    <view class="time-box">
+    <text>{{game_type.name_cn}}</text>
+    <text>{{created}}</text>
+    </view>
+    </view>
+    
+</view>
+</template>

@@ -1,0 +1,23 @@
+<import src="../clothes/clothes.wxml" />
+
+<template name="fight">
+<view class="fight-container">
+    <view class="fight-avator">
+        <image src="http://static.lolbox.duowan.com/images/champions/{{champion.name+'_40x40.jpg'}}"></image>
+    </view>
+    <view style="flex:0 0 30%">
+        <text>{{player.pn}}</text>
+    </view>
+    <view style="flex:0 0 10%">
+        <text>{{total_gold_in_k}}k</text>
+    </view>
+    <view style="flex:0 0 13%">
+        <text>{{total_killed+'/'+total_death+'/'+total_assist}}</text>
+    </view>
+    <view class="clothes-box">
+        <block wx:for="{{items}}" wx:for-item="xx">
+        <template is="clothes" data="{{...xx}}" ></template>
+        </block>
+    </view>
+</view>
+</template>

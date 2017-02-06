@@ -1,0 +1,60 @@
+/* pages/index/gameZone/gameZone.wxss */
+@import "../fight/fight.wxss";
+
+.gamezone{
+    display: flex;
+    flex-direction:column;
+    margin-left: 15rpx;
+    width:700rpx;
+    height:900rpx;
+}
+.win-header-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width:700rpx;
+    height:50rpx;
+    margin-bottom: 10rpx;
+}
+.circle{
+    width:20rpx;
+    height:20rpx;
+    border-radius: 10rpx;
+    background-color: lawngreen;
+}
+.team-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:700rpx;
+    height:400rpx;
+}
+.win-line{
+    width:1rpx;
+    height:400rpx;
+    border-radius: 1rpx;
+    border:2rpx solid lawngreen;
+    background-color: lawngreen;
+}
+.team{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    width:680rpx;
+}
+.line{
+    width:700rpx;
+    height:1rpx;
+    border-radius: 1rpx;
+    border:2rpx solid grey;
+    background-color: grey;
+    margin: 30rpx 0;
+}
+.lose-line{
+    width:1rpx;
+    height:400rpx;
+    border-radius: 1rpx;
+    border:2rpx solid red;
+    background-color: red;
+}

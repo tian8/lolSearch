@@ -1,0 +1,44 @@
+
+<!--pages/index/hero/hero.wxml-->
+<import src="../form/recent.wxml" />
+<view >
+  <view class="base-container">
+    <view>
+    <image class="avatar" src="{{url_img}}"></image>
+    </view>
+    <view class="base-message">
+      <view class="box1">
+        <text>{{pn}}</text>
+        <text>{{server}}</text>
+      </view>
+      <view class="box2">
+        <view style="margin-right:20rpx">
+          <text>{{t_zh}}</text>
+          <text>{{r_zh}}</text>
+        </view>
+        <view style="margin-right:20rpx">
+          <text>点赞</text>
+          <text>{{like}}</text>
+        </view>
+        <view style="margin-right:20rpx">
+          <text>拉黑</text>
+          <text>{{unlike}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="combat" >
+      <image src="../../../images/combat.png"></image>
+      <text>{{combat}}</text>
+    </view>
+  </view>
+  <text style="margin:20rpx;font-size:36rpx">最近比赛</text>
+  <block wx:for="{{recent}}" wx:for-item="item"  >
+   <view catchtap="getGame" data-gameid="{{item.game_id}}"> 
+     <template is="recent" data="{{...item}}"></template>
+    </view>
+</block>
+
+
+ 
+
+</view>

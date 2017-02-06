@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search-text" >
+  <image src = "../../images/search/searchwelcome.png"></image>
+  <text >{{title}}</text>
+  </view>
+  <view class="search-container">
+  <view class="server-choice" catchtap="choiceServer">
+    <text>全区服务器</text>
+  </view>
+  <input class="search-input" bindblur="onSearch"></input>
+  <view class="search-button" >
+    <image src="../../images/search/searchpic.png"></image>
+    <text>搜索</text>
+  </view>
+  </view>
+
+  
+  <view wx:if="{{searchResult}}" class="from-grid">
+  <view class="grid">
+    <text>召唤师</text>
+    <text>服务器</text>
+    <text>区域</text>
+  </view>
+    <view class="grid" wx:for="{{players}}" wx:for-index="idx" 
+    wx:for-item="item" catchtap="getPlayer" data-index="{{idx}}" data-pn="{{item.pn}}">
+    <text>{{item.pn}}</text>
+    <text>{{item.game_zone.alias}}</text>
+    <text>{{item.game_zone.server_name}}</text>
+  </view>
+  </view>
+</view>
+

@@ -1,0 +1,24 @@
+@import "../clothes/clothes.wxss";
+.fight-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10rpx; 
+}
+.fight-container text{
+    font-size: 24rpx;
+}
+.fight-avator{
+    flex:0 0 10%;
+}
+.fight-avator image{
+    width:75rpx;
+    height:75rpx;
+}
+.clothes-box{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start; 
+    flex:0 0 37%;
+}
