@@ -1,8 +1,8 @@
 ## 微信小应用-英雄联盟(LOL)战绩查询
 -----
 ### 预览
-### 2017/2/4 更新：基本的战绩查询功能
 -----
+### 2017/2/4 更新：基本的战绩查询功能
 -----
 ![](https://github.com/tian8/lolSearch/blob/master/1.png)
 ![](https://github.com/tian8/lolSearch/blob/master/2.png)
